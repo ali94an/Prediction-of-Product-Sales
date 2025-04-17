@@ -19,3 +19,38 @@ For this dataset, there were 8523 rows and 12 columns.
 The hisorgram shows that the data is right-skewed, with most sales below 6000, while a few high-sales outliers raise the average and need further analysis.</br></br>
 ![itemtype](https://github.com/user-attachments/assets/1ed954a7-0eb5-4805-bf0f-6c363e1ffd68)</br>
 "Fruits and Vegetables" and "Snack Foods" dominate sales, reflecting their appeal to health-conscious and snack-loving customers.</br>
+
+**Maching Learning Using the Following Models:**
+```
+- Linear Regression Model
+- Random Forest Regressor Model
+- Tuned Random Forest Regressor Model
+```
+## Models Evaluated & Results
+- Linear Regression Model (Testing Set):
+  - MAE = 804.120
+  - MSE = 1,194,349.715
+  - RMSE = 1,092.863
+  - R^2 = 0.567
+- Random Forest Regressor Model (Testing Set):
+  - MAE = 774.203
+  - MSE = 1,243,901.420
+  - RMSE = 1,115.303
+  - R^2 = 0.549
+- Tuned Random Forest Regressor Model (Testing Set):
+  - MAE = 734.182
+  - MSE = 1,109,131.328
+  - RMSE = 1,053.153
+  - R^2 = 0.598
+
+- The Final Model Chosen was a `Tuned Random Forest Regressor Model` with the n_estimators tuned to 250.
+
+- The Mean Absolute Error was off by about `$734.182`.
+
+- The Mean Squared Error was `$1,109,131.328`.
+
+- The Root Mean Squared Error had a calculation of `$1,053.153`.
+
+- For the testing set on the model, `59.8%` of the variance in y was explained by x.
+
+Using this model to make predictions about the outlets and their products to increase the sales would not be a very reliable. Considering the previous regression metrics from how the model performed, there is a disparity between the R^2 score and also the Root Mean Squared Error that cannot be ignored.
