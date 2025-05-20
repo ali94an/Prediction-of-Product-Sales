@@ -70,3 +70,28 @@ As we notice in here the **top 3 features** by importance is almost the same as 
 1. Item_MRP: `52%` importance.
 2. Outlet_Type_Grocery Store: `27%` importance.
 3. Outlet_Type_Grocery Store: `5%` importance.
+4. Item_Visibility: `4%` importance, negative impact, which might be counterintuitive, maybe due to clearance items being more visible but less popular.
+5. Item_Weight: `1%` importance, a negative coefficient, suggesting that heavier items tend to have lower sales.
+## Recommendations
+### Product Strategy
+- Optimize Weight: Since heavier items are negatively correlated with sales, consider redesigning packaging or offering lighter alternatives.
+- Refine Product Visibility: The negative relationship between visibility and sales suggests overexposed or clearance items may be underperforming. Reassess product placement and promotional strategies.
+### Inventory & Merchandising
+- Prioritize Top-performing Categories: Focus stock and marketing on product types with higher predicted sales.
+- Dynamic Pricing: Combine prediction scores with historical demand to apply discounts strategically.
+### Marketing & Promotions
+- Target High-Performing Segments: Direct marketing efforts toward product lines with the highest predicted sales potential.
+- Personalized Promotions: Use model predictions to suggest bundle offers or complementary products to increase average order value.
+
+## Limitations & Next Steps
+### Limitations
+- Data Scope: The dataset may not reflect recent sales trends or seasonal patterns.
+- Feature Granularity: Some influential factors like customer demographics, ad spend, or competitor pricing were not included.
+### Next Steps
+- Incorporate Time Series Trends: Add time-related variables (e.g., month, week, seasonality) to improve forecasting accuracy.
+- Feature Enrichment: Enhance the dataset with promotional data, customer segmentation, or online activity (e.g., clicks, pageviews).
+- A/B Testing: Validate model recommendations with real-world tests (e.g., offering lighter packaging).
+- Deployment & Dashboarding: Consider deploying the model in a simple dashboard using Power BI to allow sales teams to simulate predictions live.
+## For Further Information
+For any additional questions, please contact:
+- Ali Abu Nimah 📧 [alibassab25@gmail.com](mailto:alibassab25@gmail.com)
