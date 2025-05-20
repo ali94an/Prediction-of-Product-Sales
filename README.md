@@ -38,18 +38,18 @@ The hisorgram shows that the data is right-skewed, with most sales below 6000, w
   - RMSE = 1,115.303
   - R^2 = 0.549
 - Tuned Random Forest Regressor Model (Testing Set):
-  - MAE = 734.182
-  - MSE = 1,109,131.328
-  - RMSE = 1,053.153
+  - MAE = 733.198
+  - MSE = 1,109,606.186
+  - RMSE = 1,053.378
   - R^2 = 0.598
 
 - The Final Model Chosen was a `Tuned Random Forest Regressor Model` with the n_estimators tuned to 250.
 
-- The Mean Absolute Error was off by about `$734.182`.
+- The Mean Absolute Error was off by about `$733.198`.
 
-- The Mean Squared Error was `$1,109,131.328`.
+- The Mean Squared Error was `$1,109,606.186`.
 
-- The Root Mean Squared Error had a calculation of `$1,053.153`.
+- The Root Mean Squared Error had a calculation of `$1,053.378`.
 
 - For the testing set on the model, `59.8%` of the variance in y was explained by x.
 
