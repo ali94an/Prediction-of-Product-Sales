@@ -43,7 +43,7 @@ The hisorgram shows that the data is right-skewed, with most sales below 6000, w
   - RMSE = 1,053.378
   - R^2 = 0.598
 
-- The Final Model Chosen was a `Tuned Random Forest Regressor Model` with the n_estimators tuned to 250.
+- The Final Model Chosen was a `Tuned Random Forest Regressor Model` with the n_estimators tuned to 150.
 
 - The Mean Absolute Error was off by about `$733.198`.
 
@@ -54,3 +54,19 @@ The hisorgram shows that the data is right-skewed, with most sales below 6000, w
 - For the testing set on the model, `59.8%` of the variance in y was explained by x.
 
 Using this model to make predictions about the outlets and their products to increase the sales would not be a very reliable. Considering the previous regression metrics from how the model performed, there is a disparity between the R^2 score and also the Root Mean Squared Error that cannot be ignored.
+## Features Coefficients and Importance
+### Linear Regression Model Features Coeffecients Analysis
+![cc](https://github.com/user-attachments/assets/ee25a5e7-abfc-4454-b127-edb80fac1b45) </br>
+**Top 3 Impactful Features:**
+1. Item_MRP (Maximum Retail Price): `+984.5` Coefficient
+  - For every `1 unit` increases in an item's price, the sales increases approximately by `$984.5`, that means when the item is priced higher, it generates more revenue.
+2. Outlet_Type_Supermarket Type3: `+808.3` Coefficient
+  - The items in supermarket type 3 are sold higher than any other store type by `$808.3`.
+3. Outlet_Type_Grocery Store: `-1,068.3` Coefficient
+  - The items in Grocery Store are sold lower than any other store type by `$1,068.3`, that could be because of cheaper prices as we mentioned higher priced items give more revenues.
+### Random Forest Regressor Model Features Importance Analysis
+![ff](https://github.com/user-attachments/assets/21d47ff2-579f-42c2-a037-72374ddbb4f9) </br>
+As we notice in here the **top 3 features** by importance is almost the same as coeffecients but the order for `2nd` and `3rd` are changed.
+1. Item_MRP: `52%` importance.
+2. Outlet_Type_Grocery Store: `27%` importance.
+3. Outlet_Type_Grocery Store: `5%` importance.
