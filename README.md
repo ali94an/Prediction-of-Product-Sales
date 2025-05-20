@@ -69,7 +69,7 @@ Using this model to make predictions about the outlets and their products to inc
 As we notice in here the **top 3 features** by importance is almost the same as coeffecients but the order for `2nd` and `3rd` are changed.
 1. Item_MRP: `52%` importance.
 2. Outlet_Type_Grocery Store: `27%` importance.
-3. Outlet_Type_Grocery Store: `5%` importance.
+3. Outlet_Type_Supermarket Type3: `5%` importance.
 4. Item_Visibility: `4%` importance, negative impact, which might be counterintuitive, maybe due to clearance items being more visible but less popular.
 5. Item_Weight: `1%` importance, a negative coefficient, suggesting that heavier items tend to have lower sales.
 ## Recommendations
